@@ -1,0 +1,39 @@
+/* Import all CSS modules */
+@import 'variables.css';
+@import 'layout.css';
+@import 'components.css';
+@import 'tasks.css';
+@import 'admin.css';
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-primary);
+  line-height: 1.5;
+  background-color: var(--background-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+}
+
+/* Rest of the existing styles remain the same */

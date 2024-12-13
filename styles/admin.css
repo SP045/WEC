@@ -1,0 +1,59 @@
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  padding: var(--spacing-xl) 0;
+}
+
+.submissions-overview {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.group-submissions {
+  background-color: var(--background-secondary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+}
+
+.group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.submissions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.submission-card {
+  background-color: var(--background-tertiary);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+}
+
+.score-input-group {
+  margin-top: var(--spacing-md);
+}
+
+.score-input {
+  width: 80px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.score-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-light);
+}
+
+.admin-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
