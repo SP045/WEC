@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Western Entrepreneurship Challenge</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <img src="ECellKITCoEK Logo.png" width="50px" alt="Logo">
+                <h2 class="mb-0">Admin Dashboard</h2>
+                <button onclick="logout()" class="btn btn-secondary">Logout</button>
+            </div>
+        </nav>
+        
+        <div class="admin-dashboard">
+            <div class="submissions-overview">
+                <h1 class="mb-4">Submissions Overview</h1>
+                <div id="submissionsContainer" class="grid gap-3">
+                    <!-- Submissions will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/admin.js"></script>
+</body>
+</html>

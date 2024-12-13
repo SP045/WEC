@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Western Entrepreneurship Challenge</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <img src="ECellKITCoEK Logo.png" width="50px" alt="Logo">
+                <h2 class="mb-0">Western Entrepreneurship Challenge</h2>
+                <button onclick="logout()" class="btn btn-secondary">Logout</button>
+            </div>
+        </nav>
+        
+        <div class="main-content">
+            <div class="tasks-container">
+                <h1 class="mb-5">Challenge Tasks</h1>
+                
+                <div class="rounds">
+                    <div class="round" id="round1">
+                        <h2>Round 1</h2>
+                        <div class="tasks tasks-grid"></div>
+                    </div>
+                    
+                    <div class="round" id="round2">
+                        <h2>Round 2</h2>
+                        <div class="tasks tasks-grid"></div>
+                    </div>
+                    
+                    <div class="round" id="round3">
+                        <h2>Round 3</h2>
+                        <div class="tasks tasks-grid"></div>
+                    </div>
+                </div>
+                
+                <div class="card submission-section mt-5">
+                    <h3 class="mb-4">Submit Your Solution</h3>
+                    <form id="submissionForm" onsubmit="return handleSubmission(event)">
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="form-group">
+                                <label class="form-label" for="taskSelect">Select Task</label>
+                                <select id="taskSelect" class="form-input" required></select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="solutionFile">Upload Solution (PDF only)</label>
+                                <input type="file" id="solutionFile" class="form-input" accept=".pdf" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Submit Solution</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="js/tasks.js"></script>
+</body>
+</html>
